@@ -1,8 +1,4 @@
-import scrapy
-import re
-import time
 import csv
-from bs4 import BeautifulSoup
 from read_csv import Read_csv
 
 class GitRepoSpider(scrapy.Spider):
@@ -25,8 +21,6 @@ class GitRepoSpider(scrapy.Spider):
                 title = a.css("::attr(href)").extract_first()
                 travis = re.findall("travis", title)
                 if(len(travis) > 0):
-                #     with open('results.csv', 'a') as csvFile:
-                #         # soup = BeautifulSoup(response.url)
                     f.write(response.url.replace(',','') + " true\n")
                     time.sleep(2)
         f.close()
