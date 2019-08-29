@@ -8,12 +8,6 @@ class GitRepoSpider(scrapy.Spider):
     for url in urls:
         start_urls.append("https://github.com/" + url)
 
-    def save_to_csv(response):
-        with open('results.csv', 'a') as csvFile:
-            writer = csv.writer(csvFile)
-            writer.writerow(response)
-        csvFile.close()
-
     def parse(self, response):
         f = open("results.txt","a+")
         for paragraph in response.css('div.Box-body p'):
