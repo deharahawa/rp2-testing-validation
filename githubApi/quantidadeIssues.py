@@ -20,7 +20,7 @@ def issues(rep_name,orderID):
     	file.write(text)
 
         
-g = Github("Gustavoyama", "New_horizon1")
+g = Github("Gustavoyama", "G@me2009")
 
 arq = open('./list.csv')
 linhas = csv.DictReader(arq)
