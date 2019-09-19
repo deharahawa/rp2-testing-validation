@@ -1,0 +1,7 @@
+Tentar caracterizar os testes
+O que faz
+-> Relacionar a quantidade de testes e as avaliacoes da loja
+A relacao de testes automatizados e os bugs reportados ou issues
+
+sera que testes automatizados estao relacionados com a 
+aparicao de problemas? introducao e motivacao
