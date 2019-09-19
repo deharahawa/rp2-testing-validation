@@ -14,7 +14,7 @@ for row_repos in reader_repos:
 			while line != '':
 				if line == column_repos+'\n':
 					print(line)
-					with open('results.csv', 'a', newline='') as myfile:
+					with open('results_com_testes.csv', 'a', newline='') as myfile:
 					     wr = csv.writer(myfile, quoting=csv.QUOTE_ALL)
 					     wr.writerow(row_repos)
 				line = reader.readline()
