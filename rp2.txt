@@ -5,3 +5,7 @@ A relacao de testes automatizados e os bugs reportados ou issues
 
 sera que testes automatizados estao relacionados com a 
 aparicao de problemas? introducao e motivacao
+
+Usar Random Forest para adivinhar repositórios que possuem testes ou não
+
+Matriz de correlação!
