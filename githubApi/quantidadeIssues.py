@@ -14,7 +14,7 @@ def issues(rep_name,orderID):
         quantidade_stars = str(repo.stargazers_count)
         quantidade_forks = str(repo.forks_count)        
         text = rep_name + "," + quantidade_issues + "," + quantidade_stars + "," + quantidade_forks + "\n" 
-        file.write(text)     
+        file.write(text)     	
     except github.GithubException:
     	text = rep_name + ",-1,-1,-1 " + "\n"
     	file.write(text)
